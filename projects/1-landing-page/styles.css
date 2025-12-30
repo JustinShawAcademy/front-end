@@ -1,0 +1,182 @@
+/* GOOD PRACTICE: Have this in all CSS  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;    
+}
+
+/* Section: hero */
+.hero {
+    color: white;
+    background-color: #1F2937;
+    padding: 16px 16em;
+}
+
+.hero .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8em; 
+}
+
+.hero .header-container .logo{
+    font-size: 24px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+.hero .header-container nav {
+    display: flex;
+    gap: 16px;
+}
+
+.hero nav a {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.hero .hero-content {
+    display: flex;
+    margin-bottom: 8em;
+    gap: 4em;
+}
+
+.hero .hero-content .hero-text,
+.hero .hero-content .hero-image {
+    flex: 1;
+}
+
+.hero .hero-content .hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+.hero .hero-content .hero-text h1 {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+.hero .hero-content .hero-text p {
+    font-size: 18px;    
+    color: #E5E7EB;
+}
+
+.hero .hero-content .hero-text button {
+    color: white;
+    background-color: #3882F6;
+    font-weight: bold;
+    border-color: #3882F6;
+    border-radius: 10px;
+    padding: 8px 24px;
+    width: 130px;
+}
+
+.hero .hero-content .hero-image {   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #838383;
+}
+
+/* Section: info */
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 6em;
+}
+
+.info h2 {
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: 900;
+    padding: 32px 0px;  
+}
+
+.info .square-container {
+    display: flex;
+    gap: 54px;  
+}
+
+.info .square-container .square-card {
+    width: 160px;
+}
+
+.info .square-container .square-card .square {
+    height: 160px;
+    border-color: #3882F6;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 3px;
+    margin-bottom: 8px;
+}
+
+.info .square-container .square-card p {
+    color: #676c74;
+    text-align: center;
+    font-size: 18px;  
+}
+
+/* Section: quote */
+.quote {
+    background-color: #E5E7EB;
+    padding: 8em 16em;  
+}
+
+.quote .quote-text {
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: 300;
+}
+
+.quote .quote-author {
+    color: black;
+    font-size: 24px;
+    font-weight: 900;
+    text-align: end;
+}
+
+/* Section: cta (call-to-action) */
+.cta .cta-banner {
+    display: flex;
+    justify-content: space-between;
+
+    background-color: #3882F6;
+    border-radius: 10px;
+    margin: 8em 12em;
+    padding: 4em 10em;
+}
+
+.cta .cta-banner .cta-banner-text {
+   color: white 
+}
+
+.cta .cta-banner .cta-banner-text p {
+    font-weight: lighter;
+}
+
+.cta .cta-banner button {
+    padding: 8px 32px;
+
+    color: white;
+    background-color: #3882F6;
+    border-color: white;
+    border-radius: 10px;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+    background-color: #1F2937;
+    padding: 32px;
+}
+
