@@ -5,9 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css"></link>
-    <script src="javascript.js" defer></script>
+    <script src="ui-javascript.js" defer></script>
 </head>
 <body>
-   test 
+    <main>
+        <h1>Rock Paper Scissors</h1>
+        <h2>Choose your weapon!</h2>
+
+        <div class="button-container">
+            <button class="button-item rock-item">
+                <img src="img/rock.png">
+                <p>rock</p>
+            </button>
+            <button class="button-item paper-item">
+                <img src="img/paper.png">
+                <p>paper</p>
+            </button>
+            <button class="button-item scissors-item">
+                <img src="img/scissors.png">
+                <p>scissors</p>
+            </button>
+        </div>
+
+        <div class="score-container">
+            <div class="score-item">
+                <p>Your score</p>
+                <div class="human-score"></div>
+            </div>
+            <div class="score-item">
+                <p>Computer score</p>
+                <div class="computer-score"></div>
+            </div>
+        </div>
+
+        <div class="result-container">
+            <div class="game-result"></div>
+            <div class="player-choice"></div>
+            <div class="computer-choice"></div>
+        </div>
+    </main>
 </body>
 </html>

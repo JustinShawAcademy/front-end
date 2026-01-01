@@ -1,5 +1,4 @@
 const choice = ['rock', 'paper', 'scissors'];
-
 let humanScore = 0;
 let computerScore = 0;
 
@@ -41,8 +40,3 @@ function playRound(humanChoice, computerChoice) {
     console.log(`Human Score: ${humanScore} | Computer Score: ${computerScore}`);
 }
 
-function playGame(numOfRounds) {
-    for (let i = 0; i < numOfRounds; i++) {
-        playRound(getHumanChoice(), getComputerChoice());
-    }
-}

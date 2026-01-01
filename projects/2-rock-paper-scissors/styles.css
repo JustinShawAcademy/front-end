@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #FFCF68;
+}
+
+main {
+    padding: 24px 34em
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+/* Button container */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.button-container .button-item {
+    background-color: #fcebae;
+    border-radius: 10px;
+}
+
+.button-container .button-item img {
+    height: 75px;
+    width: auto;
+}
+
+.button-container .button-item p {
+    text-align: center;
+    margin: 0;
+}
+
+/* Score container */
+.score-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.score-container .score-item {
+    background-color: #fcebae;
+    border-radius: 10px;
+    height: 98px;
+    width: 170px;
+}
+
+.score-container .score-item p {
+    text-align: center;
+}
+
+/* Result container */
+.result-container {     
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fcebae;
+    border-radius: 10px;
+    height: 98px;   
+}
+
+
+
+.result-container div p {
+    margin: 0;
+}
+
