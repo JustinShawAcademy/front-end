@@ -30,15 +30,14 @@ const SearchBar = () => {
                     type="text"
                     onChange={handleChange}
                     name="location"
-                    placeholder="Toronto"
+                    placeholder="Example: Toronto, ON"
                     aria-label="Add location"
                     className="w-full bg-transparent text-gray-700 outline-none placeholder:text-gray-300"
                 />
             </form>
-            <button className='bg-gray-100 p-3 rounded-full cursor-pointer hover:brightness-95 transition duration-200'>
+            <button className="cursor-pointer rounded-full bg-gray-100 p-3 transition duration-200 hover:brightness-95">
                 <Settings className="shrink-0 text-gray-400" />
             </button>
-            
         </section>
     )
 }
