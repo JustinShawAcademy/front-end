@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Skranji:wght@400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+  
+  background-color: #1992d4;
+  font-size: 1.2rem;
+  color: white;
+
+  padding: 16px;
+  padding-right: 64px;
+}
+
+.sidebar .title {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.user-pages .user-page-select,
+.user-support .user-support-select {
+  display: flex;
+  gap: 16px;
+
+  padding: 8px 0px;
+}
+
+.user-page-select a,
+.user-support-select a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  width: 100%;
+  text-decoration: none;
+  color: white;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+  text-transform: capitalize;
+}
+
+.user-page-select a:hover,
+.user-support-select a:hover {
+  background-color: rgba(0, 0, 0, 0.05); 
+  cursor: pointer;
+}
+
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.main .main-header {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 24px 40px;
+}
+
+.main-header .top-half-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.top-half-header .lhs,
+.top-half-header .rhs {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.top-half-header .lhs {
+  flex: 1;
+  min-height: 28px;
+}
+
+.lhs form {
+  width: 100%;
+  height: 100%;
+  max-width: 450px;
+}
+
+.lhs form input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: rgb(228, 227, 227);
+  border-radius: 32px;
+}
+
+.main-header .low-half-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.low-half-header .lhs {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.lhs .user-welcome {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-welcome .welcome-message {
+  font-size: 0.8rem
+}
+
+.user-welcome .user-name {
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+.low-half-header .rhs {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.rhs button {
+  padding: 8px 0px;
+  min-width: 80px;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: white;
+  background-color: #1992d4;
+  border-radius: 32px;
+  border: none;
+}
+
+.main .main-content {
+  display: flex;
+  gap: 20px;
+  background-color: whitesmoke;
+  padding: 32px 32px 32px 16px;
+  height: 100%;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.projects .project-title {
+  font-size: 1.2rem;
+}
+
+.projects .project-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 32px;
+}
+
+.project-card-grid .project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 32px 24px;
+  background-color: white;
+  border-radius: 0px 16px 16px 0px;
+  box-shadow: 5px 5px 12px 0px rgba(0,0,0,0.1);
+  gap: 32px;
+}
+
+.project-card .card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.project-card .card-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.project-card .card-content {
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.project-card .card-icons {
+  align-self: flex-end;
+  display: flex;
+  gap: 24px;
+}
+
+.main-content .rhs {
+  display: flex;
+  flex-direction: column;
+}
+
+.rhs .announcements {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.announcements .main-title {
+  font-size: 1.2rem;
+}
+

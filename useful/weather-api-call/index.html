@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <img src="#" alt="cat">
+  <button>Next imgage</button>
+  <script>
+        const img = document.querySelector('img');
+        const button = document.querySelector('button');
+
+        function getNewCat() {
+            fetch('https://api.giphy.com/v1/gifs/translate?api_key=bb2006d9d3454578be1a99cfad65913d&s=cats')
+                .then(function(response) {
+                    return response.json();
+                })
+                .then(function(response) {
+                    img.src = response.data.images.original.url;
+                })
+                .catch(function(e) {
+                    console.log(e)
+                });
+        };
+
+        button.addEventListener('click', getNewCat);
+        getNewCat(); // call it at least once for new page is not blank
+
+ 
+  </script>
+</body>
+</html>
