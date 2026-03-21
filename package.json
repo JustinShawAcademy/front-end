@@ -7,9 +7,9 @@
   "version": "1.0.0",
   "description": "front-end-pet-projects",
   "scripts": {
-    "weather": "npm run dev -w 000-weather-app",
-    "weather:build": "npm run build -w 000-weather-app",
-    "weather:lint": "npm run lint -w 000-weather-app",
+    "000-weather-app": "npm run dev -w 000-weather-app",
+    "000-weather-app:build": "npm run build -w 000-weather-app",
+    "000-weather-app:lint": "npm run lint -w 000-weather-app",
 
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,html,css,json}\"",
     "test": "echo \"Error: no test specified\" && exit 1"
