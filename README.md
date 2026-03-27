@@ -1,11 +1,7 @@
 # front-end
 
-This is a professional-grade technical reference for your project. You can paste this directly into your **Root README.md**. It serves as both a "How-To" for you and a "Look what I know" for hiring managers.
-
----
-
-# My Developer Toolbox & Ecosystem
-## Formatting & Linting
+## My Developer Toolbox & Ecosystem
+### Formatting & Linting
 [prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss): Automatically sorts Tailwind `classNames` using the official recommended order. Prevents "class soup" and makes CSS debugging 10x faster.
 
 ### Future tools I want to incorperate
@@ -54,6 +50,67 @@ To ensure every file in the entire monorepo is perfectly clean and Tailwind clas
 ```bash
 npm run format
 ```
+
+### 4. Pushing to GitHub
+All code review are done by [CodeRabbit](https://www.coderabbit.ai/), a AI code reviewer.
+
+**The workflow will go like this:**
+1. Create a branch from `main`
+```bash
+git checkout main
+git pull origin main  # Ensures you are branching from the newest version
+git checkout -b project/project-name
+```
+
+2. Build and project on that branch
+```bash
+git add .
+git commit -m "Add FastAPI app with health endpoint and CORS"
+```
+
+3. Push and open a PR on the GH website
+```bash
+git push -u origin project/project-name
+```
+
+Go to the repository page on GitHub (github.com/JustinShawAcademy/front-end).
+
+Since we've just pushed, GitHub will show a yellow notification at the top of the code list that says:
+
+> **project/project-name had recent pushes less than a minute ago.**
+
+We can click the green **[Compare & pull request]** button on that yellow bar to review the Diff before giving a title and creating **pull request**
+
+We could have also created the PR request usign CLI:
+
+```bash
+gh pr create --fill
+```
+
+But I prefer Github's GUI :)
+
+4. Learn from CodeRabbit's PR review, and push back any suggestions
+```bash
+git add .
+git commit -m "Tighten CORS origins and add useCallback to health check"
+git push
+```
+
+### 5.. Merge the PR into `main` once satisfied:
+
+```bash
+# On GitHub: click "Merge pull request"
+# Then locally:
+git checkout main
+git pull
+```
+
+When we then start a new project, we run:
+
+```bash
+git checkout -b project/project-name
+```
+
 
 ---
 

@@ -2,10 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Skranji:wght@400;700&display=swap');
 
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: 'Hanken Grotesk', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
 }
 
 .lhs {
@@ -16,8 +16,8 @@
     height: 100vh;
     width: auto;
     display: block; /* removes tiny space at the bottom */
-    position: relative; 
-    z-index: 1; 
+    position: relative;
+    z-index: 1;
 }
 
 .logo-banner {
@@ -26,13 +26,13 @@
     width: 100%;
     height: 150px; /* Height of the translucent bar */
     background-color: rgba(0, 0, 0, 0.4); /* Black with 50% transparency */
-    
+
     /* These three lines center the logo inside the bar */
-    display: flex; 
+    display: flex;
     justify-content: center;
     align-items: center;
     gap: 16px;
-    
+
     z-index: 2; /* higher number = more front */
 }
 
@@ -77,7 +77,7 @@ body {
     background-color: white;
     padding: 1rem;
     padding-left: 4rem;
-    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
 }
 
 .form h2 {
@@ -124,7 +124,7 @@ body {
 
 .form button {
     color: white;
-    background-color: #596D48;
+    background-color: #596d48;
     padding: 12px 36px;
     border: none;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -143,7 +143,7 @@ body {
 }
 
 .log-in a {
-    color: #596D48
+    color: #596d48;
 }
 
 .log-in a:hover {

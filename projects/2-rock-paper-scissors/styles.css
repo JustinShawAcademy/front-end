@@ -3,11 +3,11 @@
 }
 
 html {
-    background-color: #FFCF68;
+    background-color: #ffcf68;
 }
 
 main {
-    padding: 24px 34em
+    padding: 24px 34em;
 }
 
 h1,
@@ -56,19 +56,16 @@ h2 {
 }
 
 /* Result container */
-.result-container {     
+.result-container {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     background-color: #fcebae;
     border-radius: 10px;
-    height: 98px;   
+    height: 98px;
 }
-
-
 
 .result-container div p {
     margin: 0;
 }
-
