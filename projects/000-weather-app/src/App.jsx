@@ -1,5 +1,6 @@
 import SearchHeader from './components/Search/SearchHeader'
 import CurrentWeather from './components/CurrentWeather/CurrentWeather'
+import WeatherStatsGrid from './components/WeatherStats/WeatherStatsGrid'
 
 function App() {
     return (
@@ -7,6 +8,7 @@ function App() {
             <div className="w-full max-w-5xl rounded-3xl bg-white p-8 shadow-sm">
                 <SearchHeader />
                 <CurrentWeather />
+                <WeatherStatsGrid /> 
             </div>
         </div>
     )
