@@ -1,7 +1,7 @@
 ## Components
-### SearchBar.jsx
+### SearchHeader.jsx
 #### React Form Handeling
-Before React 18, if you didn't use state for every (form) input, you ilre using "Uncontrolled Components" (via `useRef`), which was often looked down upon as "not the React way" for beginners. React 18 changed the game by making the native HTML `<form action={...}>` a first-class citizen, allowing us to write cleaner code that feels more like standard web development.
+Before React 18, if you didn't use state for every (form) input, you were using "Uncontrolled Components" (via `useRef`), which was often looked down upon as "not the React way" for beginners. React 18 changed the game by making the native HTML `<form action={...}>` a first-class citizen, allowing us to write cleaner code that feels more like standard web development.
 
 ##### The Controlled Pattern (Classic way)
 (Everyone had to do this before React 18)
@@ -96,3 +96,7 @@ function AddItemComponent() {
 | **Complexity** | High (more code to write). | Low (closer to standard HTML). |
 | **Live Feedback** | Easy (React knows the value live). | Hard (React only knows on submit). |
 | **Boilerplate** | High (Value/OnChange/PreventDefault). | Low (Just use `name` and `action`). |
+
+
+### WeatherStats
+StraightForward. See `./src/WeatherStats` fro the components.
