@@ -2,6 +2,7 @@ import SearchHeader from './components/Search/SearchHeader'
 import CurrentWeather from './components/CurrentWeather/CurrentWeather'
 import WeatherStatsGrid from './components/WeatherStats/WeatherStatsGrid'
 import HourlyStatsGrid from './components/HourlyStats/HourlyStatsGrid'
+import DailyStatsGrid from './components/DailyStats/DailyStatsGrid'
 
 function App() {
     return (
@@ -11,6 +12,7 @@ function App() {
                 <CurrentWeather />
                 <WeatherStatsGrid /> 
                 <HourlyStatsGrid />
+                <DailyStatsGrid />
             </div>
         </div>
     )
