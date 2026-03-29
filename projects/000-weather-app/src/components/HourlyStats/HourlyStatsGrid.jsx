@@ -98,7 +98,7 @@ const forecast = [
 
 const HourlyStatsGrid = () => {
     return (
-        <section className="flex flex-col gap-2 pt-6">
+        <section className="flex flex-col gap-2 pt-2">
             <h2 className="pl-2 text-xl capitalize">hourly forecast</h2>
             <div className="max-w-full min-w-0 overflow-x-auto">
                 <div className="flex flex-nowrap gap-3">
