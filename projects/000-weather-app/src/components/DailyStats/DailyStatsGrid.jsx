@@ -30,7 +30,7 @@ const DailyStatsGrid = () => {
     return (
         <section className="flex flex-col gap-2 pt-6">
             <h2 className="pl-2 text-xl capitalize">daily forecast</h2>
-            <div className="gird-cols-1 grid max-w-full min-w-0 md:grid-cols-2 lg:grid-cols-3 gap-2">
+            <div className="grid max-w-full min-w-0 grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3">
                 {forecast.map((day) => (
                     <DailyStatCard key={day.date} {...day} />
                 ))}

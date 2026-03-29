@@ -6,7 +6,7 @@ const DailyStatCard = ({ weekDay, date, minTemp, maxTemp, img }) => {
             <img
                 src={'./../../public/weather-icons/hail.svg'}
                 alt="weather icon"
-                className="h-30 w-30"
+                className="h-28 w-28"
             />
             <div className="flex flex-col">
                 <p className="text-base uppercase">{weekDay}</p>
