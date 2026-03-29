@@ -99,4 +99,4 @@ function AddItemComponent() {
 
 
 ### WeatherStats
-StraightForward. See `./src/WeatherStats` fro the components.
+StraightForward. See `./src/components/WeatherStats` fro the components.
