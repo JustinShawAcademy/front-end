@@ -4,7 +4,7 @@ import TempRangeItem from './TempRangeItem'
 
 const CurrentWeather = () => {
     return (
-        <section className="pt-4 pr-4">
+        <section className="pt-2 pr-4">
             <div className="flex justify-between">
                 <div className="flex items-center">
                     <img
