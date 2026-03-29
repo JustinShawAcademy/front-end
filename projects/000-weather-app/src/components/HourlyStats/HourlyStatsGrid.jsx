@@ -1,5 +1,5 @@
-import React from 'react'
-// We start on start on the current hour (round floor up) and then forcast the next 24 hours
+import React, { useRef, useEffect, useState } from 'react'
+import { motion } from 'framer-motion'
 
 import HourlyStatCard from './HourlyStatCard'
 
@@ -97,16 +97,46 @@ const forecast = [
 ]
 
 const HourlyStatsGrid = () => {
+    const [width, setWidth] = useState(0)
+    const carousel = useRef()
+
+    useEffect(() => {
+        // Function to update the width
+        const updateWidth = () => {
+            if (carousel.current) {
+                // We subtract the visible width from the total content width
+                setWidth(
+                    carousel.current.scrollWidth - carousel.current.offsetWidth,
+                )
+            }
+        }
+        // Initial call
+        updateWidth()
+        // Update if window is resized
+        window.addEventListener('resize', updateWidth)
+        // Cleanup listener on unmount
+        return () => window.removeEventListener('resize', updateWidth)
+    }, [])
+
     return (
         <section className="flex flex-col gap-2 pt-2">
             <h2 className="pl-2 text-xl capitalize">hourly forecast</h2>
-            <div className="max-w-full min-w-0 overflow-x-auto">
-                <div className="flex flex-nowrap gap-3">
-                    {forecast.map((hour) => (
-                        <HourlyStatCard key={hour.hour} {...hour} />
+            <motion.div
+                ref={carousel}
+                className="custom-scrollbar cursor-grab overflow-hidden select-none"
+                whileTap={{ cursor: 'grabbing' }}
+            >
+                <motion.div
+                    drag="x"
+                    dragConstraints={{ right: 0, left: -width }}
+                    dragElastic={0.1}
+                    className="flex flex-nowrap gap-3"
+                >
+                    {forecast.map((hour, index) => (
+                        <HourlyStatCard key={index} {...hour} />
                     ))}
-                </div>
-            </div>
+                </motion.div>
+            </motion.div>
         </section>
     )
 }
