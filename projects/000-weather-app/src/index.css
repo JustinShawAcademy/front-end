@@ -1,6 +1,9 @@
 @import 'tailwindcss';
 
 @layer utilities {
+
+    /* since we're using framer motion, this custom scroll bar does not appear. figure out later */
+
   .custom-scrollbar {
     /* 1. Standard properties (Firefox & Modern Chrome/Edge) */
     /* Syntax: scrollbar-color: [thumb-color] [track-color] */
